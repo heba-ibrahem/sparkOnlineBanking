@@ -1,17 +1,18 @@
 <div class="bg">
 <main class="container ">
-  <h1>Available Customers list</h1>
-  <table class="table table-dark table-hover container mt-4">
+  <h1 class="mt-3">Available Customers list</h1>
+  <hr>
+  <table class="table table-dark table-hover container mt-4 ">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>name</th>
-        <th>email</th>
-        <th>current balance</th>
-        <th></th>
+        <th scope="col">ID</th>
+        <th scope="col">name</th>
+        <th scope="col">email</th>
+        <th scope="col">current balance</th>
+        <th scope="col"></th>
       </tr>
     </thead>
-    <tbody id="table">
+    <tbody >
       <tr *ngFor="let customer of Customers">
         <td>{{customer.id}}</td>
         <td>{{customer.name}}</td>
@@ -23,7 +24,11 @@
     </tbody>
   </table>
 
-  <!-- <form [formGroup]="AddCustomer" (ngSubmit)="Add()" class="container" id="form">
+ 
+</main>
+</div>
+
+ <!-- <form [formGroup]="AddCustomer" (ngSubmit)="Add()" class="container" id="form">
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label" hidden>id</label>
       <div class="col-sm-10">
@@ -50,5 +55,3 @@
     </div>
     <button class="btn btn-primary" type="submit"  [disabled]="AddCustomer.invalid" >save</button>
   </form> -->
-</main>
-</div>

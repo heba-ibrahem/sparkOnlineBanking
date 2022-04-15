@@ -1,18 +1,17 @@
-
 <main>
-    <div class="mainContent">
-        <div class="txt">
-            <h1>Spark Online Banking System</h1>
+    <div class="mainContent row">
+        <div class="txt col-sm-4">
+            <h1 >Spark Online Banking System</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat voluptate eum tenetur ipsam id
                 neque a, rem architecto perspiciatis odio accusantium magni harum. Laudantium error blanditiis nihil
                 dolorem commodi.</p>
-            <div id="btns">
-                <button [routerLink]="['/allCustomers']" routerLinkActive="router-link-active">Explore Customers</button>
-                <button [routerLink]="['/alltransctions']" routerLinkActive="router-link-active">Transctions</button>
+            <div id="btns" class="row">
+                <button [routerLink]="['/allCustomers']" >Explore Customers</button>
+                <button [routerLink]="['/alltransctions']" >Transctions</button>
             </div>
 
         </div>
-        <div class="img">
+        <div class="img col-sm-3">
             <img src="assets/banking.png" alt="banking">
         </div>
     </div>

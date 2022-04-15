@@ -1,11 +1,11 @@
-<main>
-    <nav>
-        <div id="logo">Sparks Bank</div>
-        <ul class="navBtn">
-            <li [routerLink]="['/home']" routerLinkActive="router-link-active">Home </li>
-            <li>about</li>
-            <li [routerLink]="['/allCustomers']" routerLinkActive="router-link-active">All customers </li>
-            <li [routerLink]="['/alltransctions']" routerLinkActive="router-link-active">Transctions</li>
+<main class="p-1">
+    <nav class="row m-4">
+        <div id="logo" class="col-sm-3">Sparks Bank</div>
+        <ul class="navBtn col-sm-6 row">
+            <li [routerLink]="['/home']" class="col-sm-2">Home</li>
+            <li class="col-sm-2">about</li>
+            <li [routerLink]="['/allCustomers']" class="col-sm-3">All customers</li>
+            <li [routerLink]="['/alltransctions']" class="col-sm-2">Transctions</li>
             
         </ul>
       </nav>

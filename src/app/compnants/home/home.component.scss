@@ -2,20 +2,9 @@
     color: white;
 }
 main{
-    display: flex;
-    flex-direction: column;
     background-color: #36055c;
-    
-
-}
-.mainContent{
-    display: flex;
-    flex-direction: row;
 }
 .txt{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
     margin: 50px 60px;
 }
 .txt h1{
@@ -23,8 +12,6 @@ main{
     margin: 50px 0;
 }
 .img{
-     display: flex;
-    flex-direction: column;
     width: 40%;
 }
 .img img{
@@ -37,14 +24,9 @@ main{
     border: none;
     border-radius: 20px;
     background-color: #f244b4;
-    align-self: center;
+    // align-self: center;
     margin: 50px 0 0 20px;
 
-}
-#btns{
-    display: flex;
-    flex-direction: row;
-    
 }
 .mainContent button:hover{
     cursor: pointer;
