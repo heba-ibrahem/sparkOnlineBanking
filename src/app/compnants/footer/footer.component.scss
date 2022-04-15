@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #1e0035;
+    color: white;
+
+}
+.footerTxt , .devInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-transform: capitalize;
+    // justify-content: space-around;
+
+}
+p{
+    margin: 0;
+}
+.social  { 
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    color: white;
+}
+i:hover{
+    color: #f244b4;
+}
+p {
+   font-size: 25px;
+}

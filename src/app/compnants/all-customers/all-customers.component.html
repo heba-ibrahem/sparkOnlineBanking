@@ -1,0 +1,54 @@
+<div class="bg">
+<main class="container ">
+  <h1>Available Customers list</h1>
+  <table class="table table-dark table-hover container mt-4">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>email</th>
+        <th>current balance</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="table">
+      <tr *ngFor="let customer of Customers">
+        <td>{{customer.id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.balance}} EGP</td>
+        <td><button class="btn btn-primary" (click)="showCustomer(customer.id )">show</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- <form [formGroup]="AddCustomer" (ngSubmit)="Add()" class="container" id="form">
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label" hidden>id</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="id" placeholder="id" hidden>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  formControlName="name" id="name" placeholder="name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control"   formControlName="email" id="email" placeholder="email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="balance" class="col-sm-2 col-form-label">balance</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control"  formControlName="balance" id="balance" placeholder="balance">
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit"  [disabled]="AddCustomer.invalid" >save</button>
+  </form> -->
+</main>
+</div>

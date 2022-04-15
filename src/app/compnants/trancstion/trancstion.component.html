@@ -1,0 +1,39 @@
+<main>
+  <div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1>
+          Transctions History
+        </h1>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class=" card my-3 p-3 " *ngFor="let trans of transctions">
+          <div class="row">
+            <div class="col-3">
+              <h4>Transction Date</h4>
+              <h5 class="col-9">{{trans.transDate|  date:'medium'}}</h5>
+            </div>
+            <div class="col-3">
+              <h4> From</h4>
+              <h5>{{trans.from}}</h5>
+            </div>
+            <div class="col-3">
+              <h4>To</h4>
+              <h5>{{trans.to}}</h5>
+            </div>
+            <div class="col-3">
+              <h4>Amount</h4>
+              <h5>{{trans.amount}} EGP</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
